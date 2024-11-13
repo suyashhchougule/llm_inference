@@ -69,7 +69,7 @@ def format_dataset(example):
     return example
 
 def process_sft_data(dataset_path: str = None):
-    dataset = load_dataset(dataset_path, token = "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")
+    dataset = load_dataset(dataset_path, token = "")
     test_data = dataset['validation']
     test_data = test_data.map(format_dataset)
     return test_data
